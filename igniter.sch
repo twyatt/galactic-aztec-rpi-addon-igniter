@@ -3105,28 +3105,6 @@ Product ID:  &lt;a href="http://www.adafruit.com/product/269"&gt;269&lt;/a&gt;</
 <text x="-7.62" y="-12.065" size="1.27" layer="27" font="vector" align="top-left">&gt;Value</text>
 <text x="-6.35" y="2.54" size="1.27" layer="25" font="vector" ratio="6">Adafruit: 269</text>
 </package>
-<package name="5566-4">
-<description>&lt;b&gt;Mini FIT Right Angle Connector 4 Pol&lt;/b&gt;&lt;p&gt;
-Source: http://www.molex.com</description>
-<wire x1="-4.7" y1="-3.95" x2="4.7" y2="-3.95" width="0.254" layer="51"/>
-<wire x1="4.7" y1="-16.65" x2="2.1" y2="-16.65" width="0.254" layer="51"/>
-<wire x1="2.1" y1="-16.65" x2="-2.1" y2="-16.65" width="0.254" layer="51"/>
-<wire x1="-2.1" y1="-16.65" x2="-4.7" y2="-16.65" width="0.254" layer="51"/>
-<wire x1="-4.7" y1="-16.65" x2="-4.7" y2="-3.95" width="0.254" layer="51"/>
-<wire x1="-0.9" y1="-11.45" x2="-0.9" y2="-8.65" width="0.254" layer="21" curve="-114.529547"/>
-<wire x1="0.9" y1="-11.45" x2="0.9" y2="-8.65" width="0.254" layer="21" curve="114.529547"/>
-<pad name="1" x="2.1" y="-2.75" drill="1.4" shape="square"/>
-<pad name="2" x="-2.1" y="-2.75" drill="1.4" shape="square"/>
-<pad name="4" x="-2.1" y="2.75" drill="1.4" shape="square"/>
-<pad name="3" x="2.1" y="2.75" drill="1.4" shape="square"/>
-<text x="-5" y="-16" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="5" y="-16" size="1.27" layer="27" rot="R90" align="top-left">&gt;VALUE</text>
-<hole x="0" y="-10.05" drill="3"/>
-<wire x1="4.7" y1="-16.65" x2="4.7" y2="-3.95" width="0.254" layer="51"/>
-<wire x1="-2.1" y1="-16.65" x2="-2.1" y2="-15.05" width="0.127" layer="51"/>
-<wire x1="-2.1" y1="-15.05" x2="2.1" y2="-15.05" width="0.127" layer="51"/>
-<wire x1="2.1" y1="-15.05" x2="2.1" y2="-16.65" width="0.127" layer="51"/>
-</package>
 </packages>
 <symbols>
 <symbol name="ADAFRUIT-MAX31855">
@@ -3156,17 +3134,6 @@ Product ID:  &lt;a href="http://www.adafruit.com/product/269"&gt;269&lt;/a&gt;</
 <wire x1="1.016" y1="-5.08" x2="2.286" y2="-5.08" width="0.6096" layer="94"/>
 <wire x1="1.016" y1="-7.62" x2="2.286" y2="-7.62" width="0.6096" layer="94"/>
 </symbol>
-<symbol name="MV">
-<wire x1="1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
-<text x="2.54" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
-<text x="-0.762" y="1.397" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="S" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
-</symbol>
-<symbol name="M">
-<wire x1="1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
-<text x="2.54" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
-<pin name="S" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ADAFRUIT-MAX31855">
@@ -3192,34 +3159,6 @@ Product ID:  &lt;a href="http://www.adafruit.com/product/269"&gt;269&lt;/a&gt;</
 </connects>
 <technologies>
 <technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="5566-4" prefix="X">
-<description>&lt;b&gt;Mini FIT connector 4 pol&lt;/b&gt;&lt;p&gt;
-Source: http://www.molex.com</description>
-<gates>
-<gate name="-1" symbol="MV" x="0" y="5.08" addlevel="always"/>
-<gate name="-2" symbol="M" x="0" y="2.54" addlevel="always"/>
-<gate name="-3" symbol="M" x="0" y="0" addlevel="always"/>
-<gate name="-4" symbol="M" x="0" y="-2.54" addlevel="always"/>
-</gates>
-<devices>
-<device name="-RIGHTANGLE" package="5566-4">
-<connects>
-<connect gate="-1" pin="S" pad="1"/>
-<connect gate="-2" pin="S" pad="2"/>
-<connect gate="-3" pin="S" pad="3"/>
-<connect gate="-4" pin="S" pad="4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
 </technologies>
 </device>
 </devices>
@@ -3551,6 +3490,77 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 </deviceset>
 </devicesets>
 </library>
+<library name="SDSURocket-Connectors">
+<packages>
+<package name="5566-4">
+<description>&lt;b&gt;Mini FIT Right Angle Connector 4 Pol&lt;/b&gt;&lt;p&gt;
+Source: http://www.molex.com</description>
+<wire x1="4.7" y1="-16.65" x2="2.1" y2="-16.65" width="0.254" layer="51"/>
+<wire x1="2.1" y1="-16.65" x2="-2.1" y2="-16.65" width="0.254" layer="51"/>
+<wire x1="-2.1" y1="-16.65" x2="-4.7" y2="-16.65" width="0.254" layer="51"/>
+<wire x1="-4.7" y1="-16.65" x2="-4.7" y2="-3.95" width="0.254" layer="51"/>
+<wire x1="-0.9" y1="-11.45" x2="-0.9" y2="-8.65" width="0.254" layer="21" curve="-114.529547"/>
+<wire x1="0.9" y1="-11.45" x2="0.9" y2="-8.65" width="0.254" layer="21" curve="114.529547"/>
+<pad name="1" x="2.1" y="-2.75" drill="1.8" shape="square"/>
+<pad name="2" x="-2.1" y="-2.75" drill="1.8" shape="square"/>
+<pad name="4" x="-2.1" y="2.75" drill="1.8" shape="square"/>
+<pad name="3" x="2.1" y="2.75" drill="1.8" shape="square"/>
+<text x="-5" y="-16" size="1.27" layer="25" font="vector" rot="R90">&gt;Name</text>
+<text x="5" y="-16" size="1.27" layer="27" font="vector" rot="R90" align="top-left">&gt;Value</text>
+<hole x="0" y="-10.05" drill="3"/>
+<wire x1="4.7" y1="-16.65" x2="4.7" y2="-3.95" width="0.254" layer="51"/>
+<wire x1="-2.1" y1="-16.65" x2="-2.1" y2="-15.05" width="0.127" layer="51"/>
+<wire x1="-2.1" y1="-15.05" x2="2.1" y2="-15.05" width="0.127" layer="51"/>
+<wire x1="2.1" y1="-15.05" x2="2.1" y2="-16.65" width="0.127" layer="51"/>
+<wire x1="-4.7" y1="-3.95" x2="-3.7" y2="-3.95" width="0.254" layer="51"/>
+<wire x1="3.7" y1="-3.95" x2="4.7" y2="-3.95" width="0.254" layer="51"/>
+<wire x1="-0.5" y1="-3.95" x2="0.5" y2="-3.95" width="0.254" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="MV">
+<wire x1="1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
+<text x="2.54" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
+<text x="-0.762" y="1.397" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="S" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+</symbol>
+<symbol name="M">
+<wire x1="1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
+<text x="2.54" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
+<pin name="S" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="5566-4" prefix="X">
+<description>&lt;b&gt;Mini FIT connector 4 pol&lt;/b&gt;&lt;p&gt;
+Source: http://www.molex.com</description>
+<gates>
+<gate name="-1" symbol="MV" x="0" y="5.08" addlevel="always"/>
+<gate name="-2" symbol="M" x="0" y="2.54" addlevel="always"/>
+<gate name="-3" symbol="M" x="0" y="0" addlevel="always"/>
+<gate name="-4" symbol="M" x="0" y="-2.54" addlevel="always"/>
+</gates>
+<devices>
+<device name="-RIGHTANGLE" package="5566-4">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3580,15 +3590,15 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device=""/>
 <part name="RJ45-3" library="SparkFun-Connectors" deviceset="RJ45-8" device="PTH" value=""/>
 <part name="U$1" library="SDSURocket-BreakoutBoards" deviceset="ADAFRUIT-MAX31855" device="-BREAKOUT"/>
-<part name="X3" library="SDSURocket-BreakoutBoards" deviceset="5566-4" device="-RIGHTANGLE"/>
-<part name="D3" library="SparkFun-LED" deviceset="LED" device="0603" value="RED"/>
+<part name="D3" library="SparkFun-LED" deviceset="LED" device="0603" value="YELLOW"/>
 <part name="D4" library="SparkFun-LED" deviceset="LED" device="0603" value="RED"/>
-<part name="R3" library="SparkFun-Resistors" deviceset="RESISTOR" device="2512" value="1.2k 1W"/>
+<part name="R3" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603-RES" value="12k 1/4W"/>
 <part name="R4" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603-RES" value="1.8k 1/8W"/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
+<part name="X2" library="SDSURocket-Connectors" deviceset="5566-4" device="-RIGHTANGLE"/>
 </parts>
 <sheets>
 <sheet>
@@ -3610,11 +3620,15 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <text x="227.584" y="148.844" size="1.27" layer="97" rot="R90" align="top-left">NOTE: PIN PULL-DOWN RESISTOR
 MUST BE ENABLED TO PREVENT
 THE PIN STATE FROM FLOATING.</text>
-<text x="241.3" y="7.62" size="2.54" layer="94">1</text>
+<text x="241.3" y="7.62" size="2.54" layer="94">2</text>
 <text x="172.72" y="12.7" size="2.54" layer="94" align="center-left">David Wrenn &amp; Travis Wyatt</text>
 <text x="172.72" y="8.89" size="2.54" layer="94" align="center-left">SDSU Rocket Project</text>
 <text x="220.98" y="73.66" size="1.27" layer="97" align="top-center">24V Power Indicator</text>
 <text x="220.98" y="53.34" size="1.27" layer="97" align="top-center">5V Power Indicator</text>
+<text x="42.418" y="60.706" size="1.27" layer="97" align="center-right">BREAKWIRE</text>
+<text x="42.418" y="58.166" size="1.27" layer="97" align="center-right">IGNITER 1</text>
+<text x="42.418" y="55.626" size="1.27" layer="97" align="center-right">IGNITER 2</text>
+<text x="99.06" y="55.88" size="0.8128" layer="97" rot="R90" align="top-center">THERMOCOUPLE</text>
 </plain>
 <instances>
 <instance part="X1" gate="G$1" x="71.12" y="45.72"/>
@@ -3645,10 +3659,6 @@ THE PIN STATE FROM FLOATING.</text>
 <instance part="FRAME1" gate="V" x="147.32" y="0"/>
 <instance part="RJ45-3" gate="JP1" x="213.36" y="165.1"/>
 <instance part="U$1" gate="G$1" x="203.2" y="119.38"/>
-<instance part="X3" gate="-1" x="177.8" y="68.58" rot="MR0"/>
-<instance part="X3" gate="-2" x="177.8" y="66.04" rot="MR0"/>
-<instance part="X3" gate="-3" x="177.8" y="63.5" rot="MR0"/>
-<instance part="X3" gate="-4" x="177.8" y="60.96" rot="MR0"/>
 <instance part="D3" gate="G$1" x="213.36" y="78.74" rot="R90"/>
 <instance part="D4" gate="G$1" x="213.36" y="58.42" rot="R90"/>
 <instance part="R3" gate="G$1" x="226.06" y="78.74"/>
@@ -3657,6 +3667,10 @@ THE PIN STATE FROM FLOATING.</text>
 <instance part="GND4" gate="1" x="228.6" y="114.3"/>
 <instance part="SUPPLY3" gate="G$1" x="213.36" y="127"/>
 <instance part="SUPPLY4" gate="G$1" x="208.28" y="60.96"/>
+<instance part="X2" gate="-1" x="180.34" y="68.58" rot="MR0"/>
+<instance part="X2" gate="-2" x="180.34" y="66.04" rot="MR0"/>
+<instance part="X2" gate="-3" x="180.34" y="63.5" rot="MR0"/>
+<instance part="X2" gate="-4" x="180.34" y="60.96" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -3786,19 +3800,19 @@ THE PIN STATE FROM FLOATING.</text>
 <label x="157.48" y="167.64" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="X3" gate="-3" pin="S"/>
-<wire x1="180.34" y1="63.5" x2="182.88" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="X3" gate="-4" pin="S"/>
-<wire x1="182.88" y1="63.5" x2="185.42" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="60.96" x2="182.88" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="60.96" x2="182.88" y2="63.5" width="0.1524" layer="91"/>
-<junction x="182.88" y="63.5"/>
-<label x="185.42" y="63.5" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="D3" gate="G$1" pin="A"/>
 <wire x1="210.82" y1="78.74" x2="208.28" y2="78.74" width="0.1524" layer="91"/>
 <label x="208.28" y="78.74" size="1.27" layer="95" rot="MR0" xref="yes"/>
+</segment>
+<segment>
+<pinref part="X2" gate="-3" pin="S"/>
+<wire x1="182.88" y1="63.5" x2="185.42" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="X2" gate="-4" pin="S"/>
+<wire x1="185.42" y1="63.5" x2="187.96" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="60.96" x2="185.42" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="60.96" x2="185.42" y2="63.5" width="0.1524" layer="91"/>
+<junction x="185.42" y="63.5"/>
+<label x="187.96" y="63.5" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -3899,19 +3913,19 @@ THE PIN STATE FROM FLOATING.</text>
 <label x="119.38" y="111.76" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 <segment>
-<pinref part="X3" gate="-1" pin="S"/>
-<wire x1="180.34" y1="68.58" x2="182.88" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="X3" gate="-2" pin="S"/>
-<wire x1="182.88" y1="68.58" x2="185.42" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="66.04" x2="182.88" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="66.04" x2="182.88" y2="68.58" width="0.1524" layer="91"/>
-<junction x="182.88" y="68.58"/>
-<label x="185.42" y="68.58" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="231.14" y1="78.74" x2="233.68" y2="78.74" width="0.1524" layer="91"/>
 <label x="233.68" y="78.74" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="X2" gate="-1" pin="S"/>
+<wire x1="182.88" y1="68.58" x2="185.42" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="X2" gate="-2" pin="S"/>
+<wire x1="185.42" y1="68.58" x2="187.96" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="66.04" x2="185.42" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="66.04" x2="185.42" y2="68.58" width="0.1524" layer="91"/>
+<junction x="185.42" y="68.58"/>
+<label x="187.96" y="68.58" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="IGN1" class="0">
